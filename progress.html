@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Education Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px;
+        }
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        label {
+            display: inline-block;
+            text-align: left;
+            width: 100px;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"] {
+            width: calc(100% - 110px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Student Education Details</h2>
+        <form>
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+            <br>
+            <label for="studentID">Student ID:</label>
+            <input type="text" id="studentID" name="studentID" required>
+            <br>
+            <label for="mathsScore">Maths Score:</label>
+            <input type="number" id="mathsScore" name="mathsScore" min="0" max="100" required>
+            <br>
+            <label for="chemistryScore">Chemistry Score:</label>
+            <input type="number" id="chemistryScore" name="chemistryScore" min="0" max="100" required>
+            <br>
+            <label for="physicsScore">Physics Score:</label>
+            <input type="number" id="physicsScore" name="physicsScore" min="0" max="100" required>
+            <br>
+            <label for="biologyScore">Biology Score:</label>
+            <input type="number" id="biologyScore" name="biologyScore" min="0" max="100" required>
+            <br>
+            <label for="englishScore">English Score:</label>
+            <input type="number" id="englishScore" name="englishScore" min="0" max="100" required>
+            <br>
+            <label for="historyScore">History Score:</label>
+            <input type="number" id="historyScore" name="historyScore" min="0" max="100" required>
+            <br>
+            <label for="geographyScore">Geography Score:</label>
+            <input type="number" id="geographyScore" name="geographyScore" min="0" max="100" required>
+            <br>
+            <label for="computerScore">Computer Science Score:</label>
+            <input type="number" id="computerScore" name="computerScore" min="0" max="100" required>
+            <br>
+            <label for="musicScore">Music Score:</label>
+            <input type="number" id="musicScore" name="musicScore" min="0" max="100" required>
+            <br>
+            <label for="artScore">Art Score:</label>
+            <input type="number" id="artScore" name="artScore" min="0" max="100" required>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
